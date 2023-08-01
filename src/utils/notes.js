@@ -1,21 +1,22 @@
-export const notesTitle = ['Name', 'Created', 'Category','Content','Dates'];
+// export const notesTitle = ['Name', 'Created', 'Category','Content','Dates'];
+export const categories = ['Task', 'Random Thought', 'Idea'];
 export const notes = [
   {
     id: 1,
+    name: 'Theory of evolution',
+    createdAt: '2023-07-30',
+    content: 'This is a random thought',
+    category: 'Random Thought',
+    dates: [],
+  },
+  {
+    id: 2,
     name: 'Shopping List',
     createdAt: '2023-07-31',
     content:
       "I'm gonna have a dentist appointment on the 3/5/2021, I moved it from 5/5/2021",
     category: 'Task',
     dates: ['3/5/2021', '5/5/2021'],
-  },
-  {
-    id: 2,
-    name: 'Theory of evolution',
-    createdAt: '2023-07-30',
-    content: 'This is a random thought',
-    category: 'Random Thought',
-    dates: [],
   },
   {
     id: 3,
@@ -58,3 +59,4 @@ export const notes = [
     dates: ['2023-07-31'],
   },
 ];
+
