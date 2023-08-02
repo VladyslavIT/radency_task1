@@ -1,0 +1,62 @@
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.title-add {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.add-wrapper {
+  display: flex;
+  gap: 50px;
+}
+.content-add {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & label {
+    margin-bottom: 10px;
+  }
+  & textarea {
+    resize: none;
+  }
+}
+.category-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & label {
+    margin-bottom: 10px;
+  }
+}
+.dates-add {
+  text-align: center;
+  & input {
+    margin-top: 10px;
+  }
+}
+#note-content-input {
+  width: 200px;
+}
+
+.button-add {
+  text-align: end;
+}

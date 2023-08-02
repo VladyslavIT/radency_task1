@@ -1,0 +1,62 @@
+<!-- modal Add -->
+<div id="modal-overlay" class="modal-overlay">
+  <div class="modal">
+    <h2 class="title-add">Add New Note</h2>
+
+    <div class="add-wrapper">
+      <div class="content-add">
+        <label for="note-content-input">Content</label>
+        <textarea id="note-content-input" rows="4"></textarea>
+      </div>
+
+      <div class="category-add">
+        <label for="note-category-input">Category</label>
+        <select id="note-category-input">
+          <option value="Task">Task</option>
+          <option value="Random Thought">Random Thought</option>
+          <option value="Idea">Idea</option>
+        </select>
+      </div>
+
+      <div class="dates-add">
+        <label for="note-dates-input">Dates</label>
+        <input type="text" id="note-dates-input" placeholder="dd-mm-yy" />
+      </div>
+    </div>
+    <div class="button-add">
+      <button id="modal-save-btn">Save</button>
+      <button id="modal-cancel-btn">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- modal Change -->
+
+<div id="edit-modal-overlay" class="modal-overlay">
+  <div class="modal">
+    <h2 class="title-add">Edit Note</h2>
+
+    <div class="add-wrapper">
+      <div class="content-add">
+        <label for="edit-note-content-input">Content</label>
+        <textarea id="edit-note-content-input" rows="4"></textarea>
+      </div>
+      <div class="category-add">
+        <label for="edit-note-category-input">Category</label>
+        <select id="edit-note-category-input">
+          <option value="Task">Task</option>
+          <option value="Random Thought">Random Thought</option>
+          <option value="Idea">Idea</option>
+        </select>
+      </div>
+      <div class="dates-add">
+        <label for="edit-note-dates-input">Dates</label>
+        <input type="text" id="edit-note-dates-input" placeholder="New Date" />
+      </div>
+    </div>
+    <div class="button-add">
+      <button id="edit-modal-save-btn">Save</button>
+      <button id="edit-modal-cancel-btn">Cancel</button>
+    </div>
+  </div>
+</div>

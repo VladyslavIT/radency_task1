@@ -1,4 +1,3 @@
-// export const notesTitle = ['Name', 'Created', 'Category','Content','Dates'];
 export const categories = ['Task', 'Random Thought', 'Idea'];
 export const notes = [
   {
@@ -7,7 +6,7 @@ export const notes = [
     createdAt: '2023-07-30',
     content: 'This is a random thought',
     category: 'Random Thought',
-    dates: [],
+    dates: ['2023-06-10'],
   },
   {
     id: 2,

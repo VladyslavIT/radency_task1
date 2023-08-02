@@ -1,89 +1,58 @@
 <div class="root">
-  <!-- <section class="section">
-    <h1 class="title">Notes</h1>
-
-    <div class="notes-wrapper">
-      <ul class="notice">
-        <li class="bar-list"></li>
-      </ul>
-    </div>
-    <button type="button">Add note</button>
-  </section> -->
   <section class="section">
     <h1 class="title">Notes</h1>
+
     <button id="add-note-btn">Add Note</button>
-    
-    <!-- modal Add -->
-    <div id="modal-overlay" class="modal-overlay">
-      <div class="modal">
-          <h2>Add New Note</h2>
-          <label for="note-content-input">Content:</label>
-          <textarea id="note-content-input" rows="4"></textarea>
-          <label for="note-category-input">Category:</label>
-          <select id="note-category-input">
-              <option value="Task">Task</option>
-              <option value="Random Thought">Random Thought</option>
-              <option value="Idea">Idea</option>
-          </select>
-          <label for="note-dates-input">Dates (comma-separated):</label>
-          <input type="text" id="note-dates-input" placeholder="Enter dates (e.g., 3/5/2021, 5/5/2021)">
-          <button id="modal-save-btn">Save</button>
-          <button id="modal-cancel-btn">Cancel</button>
-      </div>
-  </div>
 
-  <!-- modal Change -->
-
-  <div id="edit-modal-overlay" class="modal-overlay">
-    <div class="modal">
-        <h2>Edit Note</h2>
-        <label for="edit-note-content-input">Content:</label>
-        <textarea id="edit-note-content-input" rows="4"></textarea>
-        <label for="edit-note-category-input">Category:</label>
-        <select id="edit-note-category-input">
-            <option value="Task">Task</option>
-            <option value="Random Thought">Random Thought</option>
-            <option value="Idea">Idea</option>
-        </select>
-        <label for="edit-note-dates-input">Dates (comma-separated):</label>
-        <input type="text" id="edit-note-dates-input" placeholder="Enter dates (e.g., 3/5/2021, 5/5/2021)">
-        <button id="edit-modal-save-btn">Save</button>
-        <button id="edit-modal-cancel-btn">Cancel</button>
-    </div>
-</div>
-
-
-
+    <!-- Notes -->
     <div class="notes-wrapper">
-        <table id="notes-table">
-            <thead>
-                <tr>
-                    <th>Time of Creation</th>
-                    <th>Note Content</th>
-                    <th>Note Category</th>
-                    <th>Dates</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Notes data will be added here dynamically -->
-            </tbody>
-        </table>
-    </div>
-    <div class="summary">
-      <h2>Summary</h2>
-      <table id="summary-table">
-          <thead>
-              <tr>
-                  <th>Category</th>
-                  <th>Active</th>
-                  <th>Archived</th>
-              </tr>
-          </thead>
-          <tbody>
-              <!-- Summary data will be added here dynamically -->
-          </tbody>
+      <table id="notes-table">
+        <thead class="notes-head">
+          <tr>
+            <th>Time of Creation</th>
+            <th>Content</th>
+            <th>Category</th>
+            <th>Dates</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic note-->
+        </tbody>
       </table>
-  </div>
-</section>
+    </div>
+
+    <h2 class="title-summary">Archived Notes</h2>
+    <table id="archived-notes-table">
+      <thead class="notes-head">
+        <tr>
+          <th>Time of Creation</th>
+          <th>Content</th>
+          <th>Category</th>
+          <th>Dates</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic archive notes -->
+      </tbody>
+    </table>
+
+    <!-- Summary -->
+    <div class="summary">
+      <h2 class="title-summary">Summary</h2>
+      <table id="summary-table">
+        <thead class="summary-head">
+          <tr>
+            <th>Category</th>
+            <th>Active</th>
+            <th>Archived</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic summary -->
+        </tbody>
+      </table>
+    </div>
+  </section>
 </div>
