@@ -74,7 +74,7 @@ function updateNotesTable() {
 
   const deleteButtons = notesTable.querySelectorAll('.delete-btn');
   deleteButtons.forEach(button => {
-    button.addEventListener('click', handleDeleteButtonClick);
+    button.addEventListener('click', handleDeleteButtonEvent);
   });
 }
 
@@ -183,7 +183,7 @@ export function unarchiveNote(id) {
   updateArchivedNotesTable();
   updateTables();
 }
-export function handleUnarchiveButtonClick(event) {
+export function handleUnarchiveButtonEvent(event) {
   const noteId = event.target.dataset.noteId;
   unarchiveNote(parseInt(noteId));
 }
@@ -212,9 +212,16 @@ function updateArchivedNotesTable() {
   });
 }
 
+function handleUnarchiveButtonClick(noteId) {
+  unarchiveNote(parseInt(noteId));
+}
+
+function handleDeleteButtonClick(noteId) {
+  deleteNote(parseInt(noteId));
+}
 // Delete function
 
-function handleDeleteButtonClick(event) {
+function handleDeleteButtonEvent(event) {
   const noteId = event.target.dataset.noteId;
   deleteNote(parseInt(noteId));
 }
