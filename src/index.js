@@ -212,9 +212,6 @@ function updateArchivedNotesTable() {
   });
 }
 
-function handleDeleteButtonClick(noteId) {
-  deleteNote(parseInt(noteId));
-}
 // Delete function
 
 function handleDeleteButtonClick(event) {
